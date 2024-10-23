@@ -1,0 +1,229 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* DataSenSor.css */
+
+.filter-section input {
+  padding: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.filter-button {
+  background-color: #00ffff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Căn giữa nội dung của filter-section */
+.filter-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px; /* Tạo khoảng cách giữa input và button */
+}
+.pagination-control {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-control button {
+  margin: 0 5px;
+}
+
+.pagination-control span {
+  margin: 0 10px;
+}
+/* Thêm kiểu cho bảng */
+.table {
+  width: 100%;
+  border-collapse: collapse; /* Kết hợp các đường viền */
+}
+
+.table th, .table td {
+  border: 1px solid #dee2e6; /* Đường viền nhẹ cho các ô */
+  padding: 12px; /* Khoảng cách bên trong các ô */
+}
+
+.table thead th {
+  background-color: #343a40; /* Màu nền cho tiêu đề bảng */
+  color: white; /* Màu văn bản cho tiêu đề bảng */
+  font-weight: bold; /* Làm cho văn bản tiêu đề đậm hơn */
+  text-align: left; /* Căn trái văn bản tiêu đề */
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1; /* Màu nền khi di chuột qua hàng */
+}
+
+.table tbody td {
+  background-color: #ffffff; /* Màu nền cho các ô dữ liệu */
+}
+
+.table thead th button {
+  border: none; /* Xóa viền của các nút */
+  background: none; /* Xóa nền của các nút */
+  cursor: pointer; /* Con trỏ khi di chuột qua các nút */
+  font-size: 16px; /* Kích thước chữ của các nút */
+  padding: 0;
+  margin: 0;
+  color: #ffffff; /* Màu chữ của các nút */
+}
+
+.table thead th button:hover {
+  color: #007bff; /* Màu chữ khi di chuột qua các nút */
+}
+
+/* Device.css */
+
+/* Căn giữa tiêu đề */
+.text-center {
+  text-align: center;
+}
+
+/* Điều chỉnh độ rộng bảng */
+.styled-table {
+  width: 70%; /* Độ rộng bảng là 70% */
+  margin: 0 auto; /* Căn giữa bảng */
+  border-collapse: collapse;
+}
+
+/* Các thuộc tính khác như đã đề cập trước đó */
+.styled-table th, .styled-table td {
+  border: 1px solid #dee2e6;
+  padding: 12px;
+}
+
+.styled-table thead th {
+  background-color: #343a40;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.styled-table tbody td {
+  background-color: #ffffff;
+}
+
+.filter-button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.filter-button:hover {
+  background-color: #0056b3;
+}
+
+#search-input {
+  padding: 8px;
+  width: 300px;
+  border: 1px solid #dee2e6;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0;
+}
+
+.pagination-controls label {
+  margin-left: 20px; /* Căn chỉnh khoảng cách giữa các label */
+}
+
+/* Profile.css npm install @fortawesome/fontawesome-free */
+
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-cards {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.profile-card {
+  background: #a7c3da;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  width: 45%;
+  padding: 40px;
+  text-align: center;
+  margin: 20px 10px;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: -50px;
+}
